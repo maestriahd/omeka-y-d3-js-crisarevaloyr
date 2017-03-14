@@ -61,14 +61,14 @@ var request = new XMLHttpRequest();
 // servidor proxy para souclionar problemas de CORS (ver README)
 var CORS_PROXY = 'http://192.169.250.12:8088/';
 // usa el proxy?
-var use_cors = false;
+var use_cors = true;
 //la URL del API (http://miomeka.org/api)
 var baseUrl = ''
 // el key generado por omeka
 var API_KEY = ''
 
 // comstruye la URL final a partir de los datos suministrados anteriormente
-var URL = '' // variable donde se guardará la URL final
+var URL = 'http://cineydistribucion.omeka.net/' // variable donde se guardará la URL final
 // Si va a usar el proxy
 if (use_cors){
   // concatena todas las variables
