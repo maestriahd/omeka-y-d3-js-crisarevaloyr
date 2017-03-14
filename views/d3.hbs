@@ -59,7 +59,7 @@ function viz(data){
 var request = new XMLHttpRequest();
 // variables para construir la URL final para donde se hace la petición
 // servidor proxy para souclionar problemas de CORS (ver README)
-var CORS_PROXY = 'http://192.169.250.12:8088/';
+var CORS_PROXY = 'http://cineydistribucion.omeka.net/api/';
 // usa el proxy?
 var use_cors = true;
 //la URL del API (http://miomeka.org/api)
@@ -68,7 +68,7 @@ var baseUrl = ''
 var API_KEY = ''
 
 // comstruye la URL final a partir de los datos suministrados anteriormente
-var URL = 'http://cineydistribucion.omeka.net/' // variable donde se guardará la URL final
+var URL = '' // variable donde se guardará la URL final
 // Si va a usar el proxy
 if (use_cors){
   // concatena todas las variables
